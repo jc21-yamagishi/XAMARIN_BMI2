@@ -6,9 +6,29 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <!--<Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand" />-->
+
+        <Entry Placeholder="身長をメートル単位で入力"
+               VerticalOptions="CenterAndExpand"
+               x:Name="Height"/>
+        
+        <Entry Placeholder="体重をキログラム単位で入力" 
+               VerticalOptions="CenterAndExpand"
+               x:Name="Weight"/>
+        
+        <Button Text="BMI計算（このページ）" 
+                VerticalOptions="CenterAndExpand"
+                x:Name="ButtonBMI"/>
+        
+        <Label Text="結果を表示" 
+               VerticalOptions="CenterAndExpand"
+               x:Name="LabelResult"/>
+
+        <Button Text="BMI計算（別のページ）" 
+                VerticalOptions="CenterAndExpand"
+                x:Name="ButtonBMI2"/>
     </StackLayout>
 
 </ContentPage>
